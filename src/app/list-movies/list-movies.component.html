@@ -1,0 +1,15 @@
+
+<div>
+
+
+  <div style="display: flex;justify-content: space-around;align-items: center; ">
+    <header style="text-align: center; font-weight:700; font-size:larger;margin: 25px 5px;">Movies</header>
+    <input type="text" name="search" [(ngModel)]="searchText" style="border-radius: 25px;height: 40px;width: 250px;padding: 0px 15px;" placeholder="Search ...">
+  </div>
+  <ul style="display: flex;flex-direction:row;flex-wrap: wrap; justify-content: space-around;">
+    <div *ngFor="let movie of allMovies | filter:searchText ">
+      <app-movie-item [Title]="movie.title"  [Id]="movie.id" [Image]="movie.poster_path" [Run]="movie.vote_average" ></app-movie-item>
+    </div>
+
+  </ul>
+</div>

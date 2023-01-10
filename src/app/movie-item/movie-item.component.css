@@ -1,0 +1,42 @@
+.card {
+  width: 18rem;
+  margin: 10px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  overflow: hidden; /* added to crop the image */
+  position: relative; /* added to position the title and date */
+}
+
+.card img {
+  width: 100%; /* change the width to adapt to the card width */
+  height: 250px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem; /* add some padding */
+  position: absolute; /* added to position the title and date */
+  bottom: 0; /* added to position the title and date */
+  left: 0; /* added to position the title and date */
+  width: 100%; /* added to position the title and date */
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.2rem; /* increase the font size */
+  font-weight: bold; /* add some weight to the title */
+  color: white; /* change the color to white for better visibility */
+  text-shadow: 0.5px 0.5px #000000; /* added a small shadow to the text */
+  cursor: pointer;
+}
+
+.list-group-item {
+  text-align: end;
+  width: 75px;
+  color: #999999; /* change the color to a light gray */
+}
+
